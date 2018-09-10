@@ -327,6 +327,14 @@
     margin: 0 auto;
     cursor: pointer;
 }
+.section_two .btn .content:hover{
+    background: white;
+    border: 1px solid #36d3db;
+
+}
+.section_two .btn .content:hover h1{
+    color: #36d3db;
+}
 .section_two .btn .content h1{
     font-family: "微软雅黑";
     font-size: 16px;
@@ -459,6 +467,13 @@
     margin: 0 auto;
     cursor: pointer;
 }
+.section_three .btn .content:hover{
+    border: 1px solid #36d3db;
+    background: white;
+}
+.section_three .btn .content:hover h1{
+    color:#36d3db ;
+}
 .section_three .btn .content h1{
     font-family: "微软雅黑";
     font-size: 14px;
@@ -590,6 +605,13 @@
     border-radius: 70px;
     margin: 0 auto;
     cursor: pointer;
+}
+.section_four .btn .content:hover{
+    border: 1px solid #36d3db;
+    background: white;
+}
+.section_four .btn .content:hover h1{
+    color:#36d3db ;
 }
 .section_four .btn .content h1{
     font-family: "微软雅黑";
@@ -759,6 +781,7 @@ footer .top .pic img{
     .head_min {
         display: block;
         height: 40px;
+        position: relative;
     }
     .head_min .left {
         height: 40px;
@@ -775,13 +798,62 @@ footer .top .pic img{
         width: 40px;
         /*background:red ;*/
         float: right;
-        margin-top: -40px;
+        /*margin-top: -40px;*/
+        position: absolute;
+        top: 48px;
+        right: 0;
+        display: none;
     }
     .head_min .right img {
         width: 14px;
         height: 14px;
         display: block;
         margin: 13px auto;
+    }
+    .head_min .right_return{
+        height: 40px;
+        width: 40px;
+        /*background:red ;*/
+        float: right;
+        /*margin-top: -40px;*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    .head_min .right_return img {
+        width: 14px;
+        height: 14px;
+        display: block;
+        margin: 13px auto;
+    }
+    .head_min .head_xiala{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top:40px;
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .head_min .head_xiala li{
+        height: 40px;
+        width: 100%;
+        background:rgba(242,242,242,0.3) ;
+        border-bottom: 1px solid rgba(3,3,3,0.2);
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+
+    }
+    .head_min .head_xiala a{
+        text-decoration: none;
+    }
+    .head_min .head_xiala li.hot{
+        color: #36d3db;
     }
     .bg .bg_black .body{
         height: 44px;
@@ -1013,6 +1085,11 @@ footer .top .pic img{
         line-height: 48px;
         text-align: center;
         margin: 0;
+    }
+    .head_min .head_xiala {
+
+        top: 48px;
+
     }
     .head_min .right {
         height: 48px;

@@ -142,6 +142,10 @@
     /*background: beige;*/
     padding: 20px 15px 64px 10px;
 }
+.swiper-container {
+    width: 278px;
+    height: 524px;
+}
 .section_three ul{
     width: 100%;
     position: relative;
@@ -241,6 +245,10 @@
     width: 100%;
     background: #F2F2F2;
     padding: 20px 15px 64px 10px;
+}
+.swiper-container {
+    width: 278px;
+    height: 524px;
 }
 .section_four ul{
     width: 100%;

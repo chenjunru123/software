@@ -105,6 +105,7 @@
 }
 main{
     width: 100%;
+    position: relative;
 }
 main .head{
     width: 100%;
@@ -115,7 +116,7 @@ main .head ul{
 main .head ul li{
     border-bottom: 1px solid #999999;
 }
-main .head ul li:hover h1{
+main .head ul li h1.active{
     color: #0DAEB8;
     text-decoration: none;
 }
@@ -124,6 +125,7 @@ main .head ul li h1{
     text-align: left;
     cursor: pointer;
 }
+
 main .body .top{
     border-bottom: 1px solid #cccccc;
 }
@@ -226,6 +228,8 @@ footer .top .pic img{
     }
     main{
         padding: 20px 15px;
+        position: relative;
+        height: 2850px;
     }
     main .head{
         padding: 10px 0 0 0;
@@ -237,7 +241,11 @@ footer .top .pic img{
         line-height: 30px;
     }
     main .body{
-        padding: 40px 0 0 5px;
+        /*padding: 40px 0 0 5px;*/
+        position: absolute;
+        top:203px;
+        left: 15px;
+        padding-right: 15px;
     }
     main .body .top{
         height:40px ;
@@ -303,6 +311,17 @@ footer .top .pic img{
     .head_min .right img {
         margin: 17px auto;
     }
+    main{
+        position: relative;
+        height: 2242px;
+    }
+
+    main .body{
+        position: absolute;
+        top:183px;
+        left: 15px;
+        padding-right: 15px;
+    }
 }
 /*中屏 普通pc端 col-md- >992px*/
 @media screen and (min-width: 992px) {
@@ -331,6 +350,8 @@ footer .top .pic img{
         padding: 20px 15px;
         display: flex;
         flex-direction: row;
+        position: relative;
+        height: 1300px;
     }
     main .head{
         padding: 39px 77px 0 0;
@@ -344,7 +365,11 @@ footer .top .pic img{
         font-size: 16px;
     }
     main .body{
-        padding: 40px 0 0 24px;
+        padding: 40px 24px 0 24px;
+        position: absolute;
+        top:20px;
+        left: 260px;
+
     }
     main .body .top{
         height:40px ;
@@ -445,7 +470,16 @@ footer .top .pic img{
         top: 35px;
     }
     main{
-        padding:20px 240px ;
+        height: 1310px;
+        position: relative;
+        padding:20px 180px ;
+    }
+    main .body{
+    position: absolute;
+    left: 485px;
+    top:20px;
+    /*width: 794px;*/
+    padding-right: 150px;
     }
     footer .top ul li{
         width: 230px;
